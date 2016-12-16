@@ -1,0 +1,11 @@
+<aiml>
+<category>
+  <pattern>I LIKE * ROME</pattern>
+  <template>DO NOT ASK ME ANY MORE QUESTIONS PLEASE</template>
+</category>
+<category>
+<pattern>WHY</pattern>
+<that>DO NOT ASK ME ANY MORE QUESTIONS PLEASE</that>
+<template>Because I would rather talk about you.</template>
+</category>
+</aiml>

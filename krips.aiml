@@ -1,13 +1,32 @@
-<aiml version="1.0.1" encoding="UTF-8">
-   <category>
-      <pattern>HI</pattern>
-      <template>
-What's your name?
-      </template>  
+<aiml>
+
+
+<category>
+      <pattern>I AM *</pattern>
+	<that>* MAY I KNOW YOUR NAME</that>
+      <template>Nice to meet you <set name="name">.</set></template>  
    </category>  
- 
-   <category>
-   <pattern>I AM *</pattern>
-   <template>Nice to meet you <set name="name"><star/></set></template>
-   </category>
+
+<category>
+      <pattern>*</pattern>
+	<that>* MAY I KNOW YOUR NAME</that>
+      <template>Nice to meet you <set name="name"><star/>.</set></template>  
+   </category> 
+
+<category>
+      <pattern>* IS *</pattern>
+	<that>* MAY I KNOW YOUR NAME</that>
+      <template>Nice to meet you <set name="name"><star index="2"/>.</set></template>  
+   </category> 
+<category>
+<pattern>DEEPA</pattern>
+<that>* MAY I KNOW YOUR NAME</that>
+<template>Enter your full name?</template>
+</category>  
+
+<category>
+<pattern>DEEPA KALADEVI</pattern>
+	<that>ENTER YOUR FULL NAME</that>
+<template>Your are so special to my creator.. thanks for being his friend.. be with him forever</template>
+</category>  
 </aiml>

@@ -8,7 +8,9 @@ kernel = aiml.Kernel()
 #else:
 kernel.bootstrap(learnFiles = "krips.xml", commands = "LOAD AIML B")
 kernel.saveBrain("krips.brn")
+print  "\n*************BlueRabbit*************"
+print "\nHi I am krips v 1.0... Happy to help you\n"
 
 while True:
-    print(kernel.respond(raw_input(">: ")))
+    print("you  : "+kernel.respond(raw_input("krips: ")))
     
